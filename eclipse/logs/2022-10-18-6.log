@@ -1,0 +1,94 @@
+[17:41:26] [main/INFO]: Setting user: Loyto
+[17:41:27] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:41:32] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:UnderUtilities
+[17:41:33] [Sound Library Loader/INFO]: Sound engine started
+[17:41:34] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[17:41:34] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[17:41:34] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:UnderUtilities
+[17:41:34] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[17:41:34] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:41:35] [Sound Library Loader/INFO]: Sound engine started
+[17:42:35] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[17:42:59] [Client thread/INFO]: [CHAT] LoytoBis left the game
+[17:42:59] [Client thread/INFO]: Stopping!
+ type: SURVIVAL
+[17:41:50] [Server thread/INFO]: Generating keypair
+[17:41:50] [Server thread/INFO]: Starting Minecraft server on *:25565
+[17:41:51] [Server thread/WARN]: **** FAILED TO BIND TO PORT!
+[17:41:51] [Server thread/WARN]: The exception was: java.net.BindException: Address already in use: bind
+[17:41:51] [Server thread/WARN]: Perhaps a server is already running on that port?
+[17:41:56] [main/INFO]: Setting user: LoytoBis
+[17:41:57] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:42:02] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:UnderUtilities
+[17:42:03] [Sound Library Loader/INFO]: Sound engine started
+[17:42:03] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[17:42:03] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[17:42:03] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:UnderUtilities
+[17:42:04] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[17:42:04] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:42:04] [Sound Library Loader/INFO]: Sound engine started
+[17:42:19] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[17:42:31] [Client thread/INFO]: [CHAT] LoytoBis has just earned the achievement [Taking Inventory]
+[17:42:35] [Client thread/INFO]: [CHAT] Loyto joined the game
+[17:42:58] [Client thread/INFO]: Stopping!
+]: Starting Minecraft server on *:25565
+[17:42:11] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[17:42:11] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[17:42:11] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[17:42:11] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[17:42:11] [Server thread/INFO]: Preparing level "world"
+[17:42:11] [Server thread/INFO]: Preparing start region for level 0
+[17:42:12] [Server thread/INFO]: Done (0,984s)! For help, type "help" or "?"
+[17:42:19] [Server thread/INFO]: LoytoBis[/127.0.0.1:1640] logged in with entity id 452 at (-57.921248514027944, 123.17738548400011, 192.165183137188)
+[17:42:19] [Server thread/INFO]: LoytoBis joined the game
+[17:42:31] [Server thread/INFO]: LoytoBis has just earned the achievement [Taking Inventory]
+[17:42:35] [Server thread/INFO]: Loyto[/127.0.0.1:1644] logged in with entity id 563 at (-58.130701927719116, 124.7837498358191, 189.95019581877924)
+[17:42:35] [Server thread/INFO]: Loyto joined the game
+[17:42:59] [Server thread/INFO]: LoytoBis lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[17:42:59] [Server thread/INFO]: LoytoBis left the game
+[17:42:59] [Server thread/INFO]: Loyto lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[17:42:59] [Server thread/INFO]: Loyto left the game
+[18:19:30] [Server thread/INFO]: Stopping server
+[18:19:30] [Server thread/INFO]: Saving players
+[18:19:30] [Server thread/INFO]: Saving worlds
+[18:19:30] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
+[18:19:30] [Server thread/INFO]: Saving chunks for level 'world'/Nether
+[18:19:30] [Server thread/INFO]: Saving chunks for level 'world'/The End
+der.java:544) ~[Loader.class:?]
+	at cpw.mods.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:87) ~[FMLServerHandler.class:?]
+	at cpw.mods.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:314) ~[FMLCommonHandler.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.startServer(DedicatedServer.java:120) ~[DedicatedServer.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:445) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
+Caused by: java.lang.NoSuchFieldError: field_78040_i
+	at com.builtbroken.mc.seven.ModLoader.<clinit>(ModLoader.java:127) ~[ModLoader.class:1.7.10-1.9.14b302]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_202]
+	at java.lang.Class.forName(Class.java:348) ~[?:1.8.0_202]
+	at cpw.mods.fml.common.FMLModContainer.constructMod(FMLModContainer.java:440) ~[FMLModContainer.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_202]
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74) ~[guava-17.0.jar:?]
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47) ~[guava-17.0.jar:?]
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322) ~[guava-17.0.jar:?]
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304) ~[guava-17.0.jar:?]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275) ~[guava-17.0.jar:?]
+	at cpw.mods.fml.common.LoadController.sendEventToModContainer(LoadController.java:212) ~[LoadController.class:?]
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:190) ~[LoadController.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_202]
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74) ~[guava-17.0.jar:?]
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47) ~[guava-17.0.jar:?]
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322) ~[guava-17.0.jar:?]
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304) ~[guava-17.0.jar:?]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275) ~[guava-17.0.jar:?]
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:119) ~[LoadController.class:?]
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:513) ~[Loader.class:?]
+	... 5 more
+[17:45:18] [Server thread/ERROR]: This crash report has been saved to: D:\Developpement\java\eclipse-workspace\forge-1.7.10\eclipse\.\crash-reports\crash-2022-10-18_17.45.18-server.txt
+[17:45:29] [main/INFO]: Setting user: Loyto
+[17:45:30] [Client thread/INFO]: LWJGL Version: 2.9.1
+[18:20:50] [Server thread/INFO]: Starting minecraft server version 1.7.10

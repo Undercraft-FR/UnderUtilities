@@ -1,0 +1,56 @@
+/*    */ package net.msgaming.tab;
+/*    */ 
+/*    */ import java.io.File;
+/*    */ import net.minecraftforge.common.config.Configuration;
+/*    */ 
+/*    */ 
+/*    */ public class ConfigHandler
+/*    */ {
+/*    */   public static Configuration config;
+/* 10 */   public static int playersInARow = 5;
+/* 11 */   public static String skinUrl = "https://tlauncher.org/upload/all/nickname/%player%.png";
+/* 12 */   public static String tabHeader = "&6&lTab Header";
+/* 13 */   public static String tabFooter = "&6&lPlayers online: %online%&7&l/&6&l%maxplayers%";
+/*    */ 
+/*    */ 
+/*    */   
+/*    */   public static void init(File confFile) {
+/* 18 */     if (config == null) {
+/* 19 */       config = new Configuration(confFile);
+/* 20 */       config.load();
+/* 21 */       syncConfig();
+/*    */     } 
+/*    */   }
+/*    */ 
+/*    */ 
+/*    */   
+/*    */   public static void syncConfig() {
+/*    */     try {
+/* 29 */       playersInARow = getInt("tab", "Players in a row", playersInARow);
+/* 30 */       skinUrl = getString("tab", "Skins URL, %player% will be replace with player's name", skinUrl);
+/* 31 */       tabHeader = getString("tab", "Tab Header, you can use such variables as %online%, %maxplayers%", tabHeader);
+/* 32 */       tabFooter = getString("tab", "Tab Footer, you can use such variables as %online%, %maxplayers%", tabFooter);
+/*    */     }
+/* 34 */     catch (Exception e) {
+/* 35 */       System.out.println("Unable to load Config");
+/* 36 */       e.printStackTrace();
+/*    */     } finally {
+/*    */       
+/* 39 */       if (config.hasChanged()) config.save(); 
+/*    */     } 
+/*    */   }
+/*    */   
+/*    */   private static String getString(String category, String propertyName, String defaultValue) {
+/* 44 */     return config.get(category, propertyName, defaultValue).getString();
+/*    */   }
+/*    */   
+/*    */   private static int getInt(String category, String propertyName, int defaultValue) {
+/* 48 */     return config.get(category, propertyName, defaultValue).getInt(defaultValue);
+/*    */   }
+/*    */ }
+
+
+/* Location:              C:\Users\Admin\Downloads\FancyTab-1.1.jar!\net\msgaming\tab\ConfigHandler.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       1.1.3
+ */

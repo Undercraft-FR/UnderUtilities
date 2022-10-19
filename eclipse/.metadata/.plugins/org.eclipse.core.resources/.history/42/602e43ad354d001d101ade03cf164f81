@@ -1,0 +1,68 @@
+package fr.skhr.loyto.UnderUtilities.common;
+
+import java.util.Base64;
+
+import cpw.mods.fml.common.network.ByteBufUtils;
+import cpw.mods.fml.common.network.simpleimpl.IMessage;
+import cpw.mods.fml.common.network.simpleimpl.IMessageHandler;
+import cpw.mods.fml.common.network.simpleimpl.MessageContext;
+import io.netty.buffer.ByteBuf;
+
+public class serverMessage implements IMessage {
+	private String msg;
+	
+	public serverMessage() {}
+	
+	public serverMessage(String msg) {
+		this.msg = msg;
+	}
+	
+	public static String encode(String msg) {
+		return Base64.getEncoder().encodeToString(msg.getBytes());
+	}
+	
+	public static String decode(String msg) {
+		return new String(Base64.getDecoder().decode(msg));
+	}
+
+	@Override
+	public void fromBytes(ByteBuf buf) {
+		msg = ByteBufUtils.readUTF8String(buf);
+	}
+
+	@Override
+	public void toBytes(ByteBuf buf) {
+		ByteBufUtils.writeUTF8String(buf, msg);
+	}
+
+	public static class Handler implements IMessageHandler <serverMessage, IMessage> {
+		 
+        @Override
+        public IMessage onMessage(serverMessage message, MessageContext ctx) {
+            System.out.println(message.msg);
+            
+        	try {
+        		String[] type = message.msg.split("\\[");
+	        	if(type[0].equalsIgnoreCase("conf")) {
+	        		String[] feature = type[1].split("\\|");
+	        		
+	        		if(feature[1].equals("tab")) {
+	        			String[] opts = feature[1].split(":");
+	        			
+	        			UnderUtilities.header = decode(opts[0].split(":")[1]);
+	                	UnderUtilities.footer = decode(opts[1].split(":")[1]);
+	        		}
+	        	}
+	        	else if(type[0].equalsIgnoreCase("cache")) {
+	        		String pseudo = decode(type[1].split(":")[1]);
+	        		if(UnderUtilitiesEventHandler.headCache.containsKey())
+	        	}
+        	}
+        	catch(java.util.regex.PatternSyntaxException e){
+        		e.printStackTrace();
+        	}
+
+            return null;
+        }
+    }
+}

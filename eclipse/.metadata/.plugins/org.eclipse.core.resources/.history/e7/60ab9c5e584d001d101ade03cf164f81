@@ -1,0 +1,7 @@
+package fr.skhr.loyto.UnderUtilities.client;
+
+import net.minecraft.client.renderer.entity.RenderPlayer;
+
+public class underRenderPlayer extends RenderPlayer {
+
+}

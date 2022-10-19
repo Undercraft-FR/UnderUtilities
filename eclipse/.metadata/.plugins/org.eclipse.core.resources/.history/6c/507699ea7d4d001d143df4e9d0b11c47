@@ -1,0 +1,112 @@
+package fr.skhr.loyto.UnderUtilities.client;
+
+import java.awt.image.BufferedImage;
+
+import org.lwjgl.opengl.GL11;
+
+import fr.skhr.loyto.UnderUtilities.common.UnderUtilities;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.model.ModelBiped;
+import net.minecraft.client.renderer.entity.RenderPlayer;
+import net.minecraft.client.renderer.texture.DynamicTexture;
+import net.minecraft.entity.EntityLivingBase;
+
+public class UnderRenderPlayer extends RenderPlayer{
+
+	//new ResourceLocation("textures/entity/steve.png");
+	public BufferedImage texture = UnderUtilities.test;
+	public ModelBiped tutModel;
+	
+	public UnderRenderPlayer() {
+		super();
+		this.mainModel = new ModelBiped(0.0F);
+		this.modelBipedMain = (ModelBiped) this.mainModel;
+		this.modelArmorChestplate = new ModelBiped(1.0F);
+		this.modelArmor = new ModelBiped(0.5F);
+		this.tutModel = new ModelBiped(0.0f);
+	}
+	
+	@Override
+	public void renderModel(EntityLivingBase p_77036_1_, float p_77036_2_, float p_77036_3_, float p_77036_4_, float p_77036_5_, float p_77036_6_, float p_77036_7_) {
+		this.bindTexture(Minecraft.getMinecraft().renderEngine.getDynamicTextureLocation(texture);
+		//this.bindEntityTexture(p_77036_1_);
+
+        if (!p_77036_1_.isInvisible())
+        {
+            this.mainModel.render(p_77036_1_, p_77036_2_, p_77036_3_, p_77036_4_, p_77036_5_, p_77036_6_, p_77036_7_);
+        }
+        else if (!p_77036_1_.isInvisibleToPlayer(Minecraft.getMinecraft().thePlayer))
+        {
+            GL11.glPushMatrix();
+            GL11.glColor4f(1.0F, 1.0F, 1.0F, 0.15F);
+            GL11.glDepthMask(false);
+            GL11.glEnable(GL11.GL_BLEND);
+            GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
+            GL11.glAlphaFunc(GL11.GL_GREATER, 0.003921569F);
+            this.mainModel.render(p_77036_1_, p_77036_2_, p_77036_3_, p_77036_4_, p_77036_5_, p_77036_6_, p_77036_7_);
+            GL11.glDisable(GL11.GL_BLEND);
+            GL11.glAlphaFunc(GL11.GL_GREATER, 0.1F);
+            GL11.glPopMatrix();
+            GL11.glDepthMask(true);
+        }
+        else
+        {
+            this.mainModel.setRotationAngles(p_77036_2_, p_77036_3_, p_77036_4_, p_77036_5_, p_77036_6_, p_77036_7_, p_77036_1_);
+        }
+	}
+	
+	/*
+	@Override
+	public void renderModel(EntityLivingBase entity, float par2, float par3, float par4, float par5, float par6, float par7){
+		super.renderModel(entity, par2, par3, par4, par5, par6, par7);
+		ModelBiped modelBiped;
+		for (int i = 0; i < 4; ++i)
+		{
+			modelBiped = this.tutModel;
+			
+			GL11.glColor4f(1, 1, 1, 1);
+			this.bindTexture(texture);
+			modelBiped.bipedHead.showModel = i == 0;
+			modelBiped.bipedHeadwear.showModel = i == 0;
+			modelBiped.bipedBody.showModel = i == 1 || i == 2;
+			modelBiped.bipedRightArm.showModel = i == 1;
+			modelBiped.bipedLeftArm.showModel = i == 1;
+			modelBiped.bipedRightLeg.showModel = i == 2 || i == 3;
+			modelBiped.bipedLeftLeg.showModel = i == 2 || i == 3;
+			modelBiped.onGround = this.mainModel.onGround;
+			modelBiped.isRiding = this.mainModel.isRiding;
+			modelBiped.isChild = this.mainModel.isChild;
+			if (this.mainModel instanceof ModelBiped)
+			{
+				modelBiped.heldItemLeft = ((ModelBiped) this.mainModel).heldItemLeft;
+				modelBiped.heldItemRight = ((ModelBiped) this.mainModel).heldItemRight;
+				modelBiped.isSneak = ((ModelBiped) this.mainModel).isSneak;
+				modelBiped.aimedBow = ((ModelBiped) this.mainModel).aimedBow;
+			}
+			modelBiped.setLivingAnimations(entity, par2, par3, 0.0F);
+			modelBiped.render(entity, par2, par3, par4, par5, par6, par7);
+			
+			// Start alpha render
+			GL11.glDisable(GL11.GL_LIGHTING);
+			this.bindTexture(texture);
+			GL11.glEnable(GL11.GL_ALPHA_TEST);
+			GL11.glEnable(GL11.GL_BLEND);
+			GL11.glAlphaFunc(GL11.GL_GREATER, 0.0F);
+			GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
+			float time = entity.ticksExisted / 10.0F;
+			float sTime = (float) Math.sin(time) * 0.5F + 0.5F;
+			
+			float r = 0.2F * sTime;
+			float g = 1.0F * sTime;
+			float b = 0.2F * sTime;
+			
+			
+			modelBiped.render(entity, par2, par3, par4, par5, par6, par7);
+			GL11.glDisable(GL11.GL_BLEND);
+			GL11.glEnable(GL11.GL_ALPHA_TEST);
+			GL11.glColor4f(1, 1, 1, 1);
+			GL11.glEnable(GL11.GL_LIGHTING);
+		}
+	}
+	*/
+}

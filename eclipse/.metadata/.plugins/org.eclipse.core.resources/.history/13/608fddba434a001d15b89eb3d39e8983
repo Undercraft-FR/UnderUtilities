@@ -1,0 +1,65 @@
+/*    */ package net.msgaming.tab;
+/*    */ 
+/*    */ import java.awt.Graphics;
+/*    */ import java.awt.image.BufferedImage;
+/*    */ import java.io.IOException;
+/*    */ import java.net.URL;
+/*    */ import java.util.List;
+/*    */ import java.util.concurrent.ConcurrentHashMap;
+/*    */ import javax.imageio.ImageIO;
+/*    */ import net.minecraft.client.Minecraft;
+/*    */ import net.minecraft.util.ResourceLocation;
+/*    */ 
+/*    */ public class SkinLoader
+/*    */   implements Runnable
+/*    */ {
+/*    */   private final String username;
+/*    */   private ConcurrentHashMap<String, BufferedImage> cachedImages;
+/*    */   private List<String> fetchingSkins;
+/*    */   
+/*    */   public SkinLoader(String username, ConcurrentHashMap<String, BufferedImage> cachedImages, List<String> fetchingSkins) {
+/* 21 */     this.username = username;
+/* 22 */     this.cachedImages = cachedImages;
+/* 23 */     this.fetchingSkins = fetchingSkins;
+/*    */   }
+/*    */ 
+/*    */   
+/*    */   public void run() {
+/* 28 */     BufferedImage skinImage = null;
+/*    */     try {
+/* 30 */       skinImage = ImageIO.read(new URL(ConfigHandler.skinUrl.replace("%player%", this.username)));
+/*    */     }
+/* 32 */     catch (IOException e) {
+/*    */       try {
+/* 34 */         skinImage = ImageIO.read(Minecraft.func_71410_x().func_110442_L().func_110536_a(new ResourceLocation("textures/entity/steve.png")).func_110527_b());
+/*    */       }
+/* 36 */       catch (IOException e2) {
+/* 37 */         e.printStackTrace();
+/*    */       } 
+/*    */     } 
+/* 40 */     this.cachedImages.put(this.username, faceFromSkin(skinImage));
+/* 41 */     this.fetchingSkins.remove(this.username);
+/*    */   }
+/*    */   
+/*    */   private BufferedImage faceFromSkin(BufferedImage skinImage) {
+/* 45 */     int faceSize = 8;
+/* 46 */     int overlaySize = 40;
+/* 47 */     if (skinImage.getHeight() == 512) {
+/* 48 */       faceSize = 128;
+/* 49 */       overlaySize = 640;
+/*    */     } 
+/* 51 */     BufferedImage merged = new BufferedImage(faceSize, faceSize, 2);
+/* 52 */     BufferedImage face = skinImage.getSubimage(faceSize, faceSize, faceSize, faceSize);
+/* 53 */     BufferedImage overlay = skinImage.getSubimage(overlaySize, faceSize, faceSize, faceSize);
+/* 54 */     Graphics g = merged.getGraphics();
+/* 55 */     g.drawImage(face, 0, 0, null);
+/* 56 */     g.drawImage(overlay, 0, 0, null);
+/* 57 */     return merged;
+/*    */   }
+/*    */ }
+
+
+/* Location:              C:\Users\Admin\Downloads\FancyTab-1.1.jar!\net\msgaming\tab\SkinLoader.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       1.1.3
+ */

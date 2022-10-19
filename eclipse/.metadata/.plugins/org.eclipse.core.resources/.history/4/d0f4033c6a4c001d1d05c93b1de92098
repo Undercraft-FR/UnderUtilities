@@ -1,0 +1,7 @@
+package fr.skhr.loyto.SKHRTab.common;
+
+public class EventHandler {
+	public void onRenderGameOverlay() {
+		
+	}
+}
