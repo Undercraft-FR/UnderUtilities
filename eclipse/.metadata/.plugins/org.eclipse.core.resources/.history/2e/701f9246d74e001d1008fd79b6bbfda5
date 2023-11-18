@@ -1,7 +1,0 @@
-package fr.skhr.loyto.UnderUtilities.client;
-
-import net.minecraft.client.gui.GuiChat;
-
-public class UnderChat extends GuiChat {
-
-}

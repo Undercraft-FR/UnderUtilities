@@ -1,8 +1,0 @@
-package fr.skhr.loyto.UnderUtilities.client;
-
-public class UnderChat{
-
-	public UnderChat() {
-		
-	}
-}

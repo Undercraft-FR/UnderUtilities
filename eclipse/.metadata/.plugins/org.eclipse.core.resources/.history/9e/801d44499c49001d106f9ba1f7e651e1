@@ -1,8 +1,0 @@
-package fr.skhr.loyto.SKHRTab.proxy;
-
-public class ClientProxy {
-	public void registerRender()
-    {
-        System.out.println("méthode côté client");
-    }
-}
