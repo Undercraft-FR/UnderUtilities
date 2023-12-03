@@ -1,7 +1,6 @@
 package fr.skhr.loyto.UnderUtilities.common;
 
 import java.io.UnsupportedEncodingException;
-import java.util.Arrays;
 import java.util.Base64;
 
 import cpw.mods.fml.common.network.ByteBufUtils;
@@ -52,16 +51,15 @@ public class serverMessage implements IMessage {
         	try {
         		String[] type = message.msg.split("\\[");
 	        	if(type[0].equalsIgnoreCase("conf")) {
-					String[] feature = type[1].split("\\|");
-
-					if (feature[0].equalsIgnoreCase("tab")) {
-						String[] opts = feature[1].split(";");
-						UnderUtilities.header = decode(opts[0].split(":")[1]);
-						UnderUtilities.header1 = decode(opts[1].split(":")[1]);
-						UnderUtilities.footer = decode(opts[2].split(":")[1]);
-						UnderUtilities.footer1 = decode(opts[3].split(":")[1]);
-					}
-				}
+	        		String[] feature = type[1].split("\\|");
+	        		
+	        		if(feature[0].equalsIgnoreCase("tab")) {
+	        			String[] opts = feature[1].split(";");
+	        			
+	        			UnderUtilities.header = decode(opts[0].split(":")[1]);
+	                	UnderUtilities.footer = decode(opts[1].split(":")[1]);
+	        		}
+	        	}
 	        	else if(type[0].equalsIgnoreCase("cache")) {
 	        		String[] opts = type[1].split(":");
 	        		

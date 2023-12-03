@@ -1,0 +1,29 @@
+package fr.skhr.loyto.UnderUtilities.proxy;
+
+import java.util.HashMap;
+
+import cpw.mods.fml.client.registry.RenderingRegistry;
+import fr.skhr.loyto.UnderUtilities.client.UnderRenderPlayer;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.ResourceLocation;
+
+public class ClientProxy extends CommonProxy {
+
+	//Cache skin
+	public HashMap<String, ResourceLocation> dlSkin = new HashMap<String, ResourceLocation>();
+	public static HashMap<String, ResourceLocation> cacheSkin = new HashMap<String, ResourceLocation>();
+	
+	public void registerRender()
+    {
+		RenderingRegistry.registerEntityRenderingHandler(EntityPlayer.class, new UnderRenderPlayer());
+    }
+	
+	public static ResourceLocation getSkinLocation(String name) {
+		
+		if(!cacheSkin.containsKey(name)) {
+			return new ResourceLocation("textures/entity/steve.png");
+		}
+		
+		return cacheSkin.get(name);
+	}
+}

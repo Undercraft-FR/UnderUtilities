@@ -1,0 +1,11 @@
+package fr.skhr.loyto.SKHRTab.common;
+
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+
+public class EventHandler {
+	
+	@SubscribeEvent
+	public void onRenderGameOverlay() {
+		
+	}
+}

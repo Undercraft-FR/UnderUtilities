@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="dlHeadCache"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="dlCache"/>
+			<item value="width"/>
+			<item value="Minecraft.get"/>
+			<item value="bindTexture"/>
+			<item value="getResourceLocationSkinAndCape"/>
+			<item value="downloadPlayerSkin"/>
+			<item value="bindTe"/>
+			<item value="Minecraft.getMinecraft().renderEngine"/>
+			<item value="getLocationSkin"/>
+			<item value="getDisplayName"/>
+			<item value="Minecraft.getMinecraft().renderEngine.getDynamicTextureLocation(&quot;&quot;, new DynamicTexture(UnderUtilities.test))"/>
+			<item value="Minecraft.getMinecraft().renderEngine.getDynamicTextureLocation(&quot;&quot;, new DynamicTexture(UnderUtilities.test));"/>
+			<item value="getEntityTexture"/>
+			<item value="defaultSkin"/>
+			<item value="new ResourceLocation"/>
+		</list>
+		<list key="replacehistory">
+			<item value="dlHeadCache"/>
+			<item value="dlSkinCache"/>
+			<item value="loadPlayerSkin"/>
+			<item value="getCommandSenderName"/>
+			<item value="ClientProxy.getSkinLocation(username)"/>
+			<item value="ClientProxy.getSkinLocation()"/>
+			<item value="ClientProxy."/>
+			<item value="bindTexture"/>
+			<item value="renderFirstPersonArm"/>
+			<item value="this.bindTexture"/>
+			<item value="getDisplayName"/>
+			<item value="UnderUtilities"/>
+			<item value="ConcurrentHashMap"/>
+			<item value="matches(&quot;.*\\[\\].*&quot;)"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1501"/>
+		<item key="DIALOG_Y_ORIGIN" value="427"/>
+		<item key="DIALOG_WIDTH" value="414"/>
+		<item key="DIALOG_HEIGHT" value="454"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

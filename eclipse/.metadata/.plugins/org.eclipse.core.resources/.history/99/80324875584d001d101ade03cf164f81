@@ -1,0 +1,19 @@
+package fr.skhr.loyto.UnderUtilities.client;
+
+import net.minecraft.client.model.ModelBiped;
+import net.minecraft.client.renderer.entity.RenderPlayer;
+import net.minecraft.util.ResourceLocation;
+
+public class underRenderPlayer extends RenderPlayer {
+	private static final ResourceLocation steveTextures = new ResourceLocation("textures/entity/steve.png");
+    public ModelBiped modelBipedMain;
+    public ModelBiped modelArmorChestplate;
+    public ModelBiped modelArmor;
+    
+    public underRenderPlayer() {
+    	super(new ModelBiped(0.0F), 0.5F);
+        this.modelBipedMain = (ModelBiped)this.mainModel;
+        this.modelArmorChestplate = new ModelBiped(1.0F);
+        this.modelArmor = new ModelBiped(0.5F);
+    }
+}

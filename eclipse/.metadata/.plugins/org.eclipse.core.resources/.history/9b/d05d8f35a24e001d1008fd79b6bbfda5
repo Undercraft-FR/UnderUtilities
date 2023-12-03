@@ -1,0 +1,74 @@
+package fr.skhr.loyto.UnderUtilities.proxy;
+
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.net.URL;
+import java.util.HashMap;
+
+import javax.imageio.ImageIO;
+
+import cpw.mods.fml.client.registry.RenderingRegistry;
+import fr.skhr.loyto.UnderUtilities.client.UnderRenderPlayer;
+import fr.skhr.loyto.UnderUtilities.common.HeadDownloader;
+import fr.skhr.loyto.UnderUtilities.common.UnderUtilities;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.texture.DynamicTexture;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.ResourceLocation;
+
+public class ClientProxy extends CommonProxy {
+
+	//Cache skin
+	public static HashMap<String, ResourceLocation> dlCache = new HashMap<String, ResourceLocation>();
+	public static HashMap<String, ResourceLocation> cacheSkin = new HashMap<String, ResourceLocation>();
+	
+	public void registerRender()
+    {
+		RenderingRegistry.registerEntityRenderingHandler(EntityPlayer.class, new UnderRenderPlayer());
+    }
+	
+	public static ResourceLocation getSkinLocation(String name) {
+		
+		if(!cacheSkin.containsKey(name)) {
+			if(!dlCache.containsKey(name)) {
+				(new Thread(new SkinDownloader(name, dlCache, skinCache))).start();
+			}
+			
+			return new ResourceLocation("textures/entity/steve.png");
+		}
+		
+		return cacheSkin.get(name);
+	}
+}
+
+class SkinDownloader implements Runnable {
+	HashMap<String, ResourceLocation> dlCache;
+	HashMap<String, ResourceLocation> skinCache;
+	String name;
+	
+	public SkinDownloader(String name, HashMap<String, ResourceLocation> dlCache, HashMap<String, ResourceLocation> skinCache) {
+		this.name = name;
+		this.dlCache = dlCache;
+		this.skinCache = skinCache;
+	}
+	
+	public void run() {
+		dlCache.put(name, null);
+		BufferedImage dlSkin = null;
+		try {
+			URL url = new URL("https://www.undercraft.fr/api/skin-api/skins/%player%".replace("%player%", name));
+			dlSkin = ImageIO.read(url.openStream());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		BufferedImage skin = new BufferedImage(64, 32, 2);
+		BufferedImage partSkin = dlSkin.getSubimage(0, 0, 64, 32);
+		Graphics g = skin.getGraphics();
+		g.drawImage(partSkin, 0, 0, null);
+		
+		skinCache.put(name, Minecraft.getMinecraft().renderEngine.getDynamicTextureLocation(name, new DynamicTexture(skin)));
+		dlCache.remove(name);
+	}
+}

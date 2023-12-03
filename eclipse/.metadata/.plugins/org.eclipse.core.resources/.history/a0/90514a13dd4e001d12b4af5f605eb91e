@@ -1,0 +1,18 @@
+package fr.skhr.loyto.UnderUtilities.client;
+
+import net.minecraft.client.Minecraft;
+
+public class UnderChat{
+	Minecraft mc;
+	
+	String server;
+
+	public UnderChat(Minecraft mc, String server) {
+		this.mc = mc;
+		this.server = server;
+	}
+	
+	public String getServer() {
+		return server;
+	}
+}

@@ -29,9 +29,7 @@ public class UnderUtilities {
 	
 	//Default tab header-footer
 	public static String header = "Voici le Header";
-	public static String header1 = "Header : <size>";
 	public static String footer = "Voici le Footer";
-	public static String footer1 = "Voici la deuxième ligne du Footer";
 	public static BufferedImage test = null;
 	
 	//Network
@@ -58,10 +56,8 @@ public class UnderUtilities {
 		    }
 		}
 
-		header = cfg.get("tab" , "header", header).getString();
-		header1 = cfg.get("tab" , "header1", header1).getString();
 		footer = cfg.get("tab" , "footer", footer).getString();
-		footer1 = cfg.get("tab" , "footer1", footer1).getString();
+		header = cfg.get("tab" , "header", header).getString();
 		cfg.save();
 		
 		//Network

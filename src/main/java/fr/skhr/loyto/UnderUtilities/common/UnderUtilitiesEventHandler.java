@@ -17,7 +17,7 @@ public class UnderUtilitiesEventHandler {
 	
 	@SubscribeEvent
 	public void onPlayerLoggedIn(PlayerLoggedInEvent event) {
-		String msg = "conf[tab|header:" + serverMessage.encode(UnderUtilities.header) + ";header1:" + serverMessage.encode(UnderUtilities.header1) + ";footer:" + serverMessage.encode(UnderUtilities.footer) + ";footer1:" + serverMessage.encode(UnderUtilities.footer1);
+		String msg = "conf[tab|header:" + serverMessage.encode(UnderUtilities.header) + ";footer:" + serverMessage.encode(UnderUtilities.footer);
 		
 		UnderUtilities.network.sendTo(new serverMessage(msg), (EntityPlayerMP) event.player);
 	}

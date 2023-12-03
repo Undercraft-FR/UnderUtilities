@@ -1,0 +1,58 @@
+package fr.skhr.loyto.UnderUtilities.client;
+
+import net.minecraft.client.entity.AbstractClientPlayer;
+import net.minecraft.client.entity.EntityPlayerSP;
+import net.minecraft.client.model.ModelBiped;
+import net.minecraft.client.renderer.entity.RenderPlayer;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.item.EnumAction;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
+
+public class underRenderPlayer extends RenderPlayer {
+	private static final ResourceLocation steveTextures = new ResourceLocation("textures/entity/steve.png");
+    public ModelBiped modelBipedMain;
+    public ModelBiped modelArmorChestplate;
+    public ModelBiped modelArmor;
+    
+    public underRenderPlayer() {
+        this.modelBipedMain = (ModelBiped)this.mainModel;
+        this.modelArmorChestplate = new ModelBiped(1.0F);
+        this.modelArmor = new ModelBiped(0.5F);
+    }
+    
+    public void doRender(AbstractClientPlayer playerAbs, double x, double y, double z, float yaw, float partialRenderTick) {
+    	ResourceLocation steveTextures = new ResourceLocation("textures/entity/steve.png");
+    	
+		ItemStack itemstack = playerAbs.inventory.getCurrentItem();
+		
+		if (itemstack != null && playerAbs.getItemInUseCount() > 0)
+        {
+            EnumAction enumaction = itemstack.getItemUseAction();
+
+            if (enumaction == EnumAction.block)
+            {
+            	this.modelArmorChestplate.heldItemRight = this.modelArmor.heldItemRight = this.modelBipedMain.heldItemRight = 3;
+            }
+            else if (enumaction == EnumAction.bow)
+            {
+            	this.modelArmorChestplate.aimedBow = this.modelArmor.aimedBow = this.modelBipedMain.aimedBow = true;
+            }
+        }
+		
+		this.modelArmorChestplate.isSneak = this.modelArmor.isSneak = this.modelBipedMain.isSneak = playerAbs.isSneaking();
+        double d3 = y - (double)playerAbs.yOffset;
+
+        if (playerAbs.isSneaking() && !(playerAbs instanceof EntityPlayerSP))
+        {
+            d3 -= 0.125D;
+        }
+        
+        super.doRender((EntityLivingBase)playerAbs, x, d3, z, yaw, partialRenderTick);
+        this.modelArmorChestplate.aimedBow = this.modelArmor.aimedBow = this.modelBipedMain.aimedBow = false;
+        this.modelArmorChestplate.isSneak = this.modelArmor.isSneak = this.modelBipedMain.isSneak = false;
+        this.modelArmorChestplate.heldItemRight = this.modelArmor.heldItemRight = this.modelBipedMain.heldItemRight = 0;
+        
+        net.minecraftforge.common.MinecraftForge.EVENT_BUS.post(new net.minecraftforge.client.event.RenderPlayerEvent.Post(playerAbs, this, partialRenderTick));
+    }
+}

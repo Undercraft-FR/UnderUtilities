@@ -1,0 +1,313 @@
+[10:26:25] [Server thread/INFO]: Starting minecraft server version 1.7.10
+[10:26:32] [Server thread/INFO]: Loading properties
+[10:26:32] [Server thread/INFO]: Default game type: SURVIVAL
+[10:26:32] [Server thread/INFO]: Generating keypair
+[10:26:32] [Server thread/INFO]: Starting Minecraft server on *:25565
+[10:26:32] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[10:26:32] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[10:26:32] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[10:26:32] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[10:26:32] [Server thread/INFO]: Preparing level "world"
+[10:26:33] [Server thread/INFO]: Preparing start region for level 0
+[10:26:33] [Server thread/INFO]: Done (1,244s)! For help, type "help" or "?"
+[10:27:20] [Server thread/INFO]: Loyto[/127.0.0.1:22576] logged in with entity id 344 at (1007.1176924946253, 108.99727989251734, 485.1738914663558)
+[10:27:20] [Server thread/INFO]: Loyto joined the game
+[10:27:21] [Server thread/INFO]: Loyto lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[10:27:21] [Server thread/INFO]: Loyto left the game
+[10:28:28] [Server thread/INFO]: Stopping server
+[10:28:28] [Server thread/INFO]: Saving players
+[10:28:28] [Server thread/INFO]: Saving worlds
+[10:28:28] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
+[10:28:28] [Server thread/INFO]: Saving chunks for level 'wo[10:28:30] [Client thread/INFO]: Stopping!
+: Saving chunks for level 'world'/The End
+[10:28:34] [main/INFO]: Setting user: Loyto
+[10:28:35] [Client thread/INFO]: LWJGL Version: 2.9.1
+[10:28:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:UnderUtilities
+[10:28:42] [Sound Library Loader/INFO]: Sound engine started
+[10:28:43] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[10:[10:28:49] [Server thread/INFO]: Loading properties
+[10:28:49] [Server thread/INFO]: Default game type: SURVIVAL
+[10:28:49] [Server thread/INFO]: Generating keypair
+[10:28:49] [Server thread/INFO]: Starting Minecraft server on *:25565
+[10:28:49] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[10:28:49] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[10:28:49] [Server thread/WARN[10:28:57] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[10:29:48] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[10:44:56] [Client thread/INFO]: Stopping!
+thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[10:28:50] [Server thread/INFO]: Preparing level "world"
+[10:28:50] [Server thread/INFO]: Preparing start region for level 0
+[10:28:51] [Server thread/INFO]: Done (1,166s)! For help, type "help" or "?"
+[10:28:57] [Server thread/INFO]: Loyto[/127.0.0.1:22735] logged in with entity id 334 at (1007.1176924946253, 108.99727989251734, 485.1738914663558)
+[10:28:57] [Server thread/INFO]: Loyto joined the game
+[10:28:58] [Server thread/INFO]: Loyto lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[10:28:58] [Server thread/INFO]: Loyto left the game
+[10:29:48] [Server thread/INFO]: Loyto[/127.0.0.1:22738] logged in with entity id 665 at (1007.1176924946253, 108.99727989251734, 485.1738914663558)
+[10:29:48] [Server thread/INFO]: Loyto joined the game
+[10:29:48] [Server thread/INFO]: Loyto lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[10:29:48] [Server thread/INFO]: Loyto left the game
+[10:45:19] [Server thread/INFO]: Loyto[/127.0.0.1:18632] logged in with entity id 998 at (1007.1176924946253, 108.99727989251734, 485.1738914663558)
+[10:45:19] [Server thread/INFO]: Loyto joined the game
+[10:45:20] [Server thread/INFO]: Loyto lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[10:45:20] [Server thread/INFO]: Loyto left the game
+[10:55:57] [Server thread/INFO]: Loyto[/127.0.0.1:1151] logged in with entity id 1330 at (1007.1176924946253, 108.99727989251734, 485.1738914663558)
+[10:55:57] [Server thread/INFO]: Loyto joined the game
+[10:58:30] [Server thread/INFO]: Loyto lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[10:58:30] [Server thread/INFO]: Loyto left the game
+[10:58:55] [Server thread/INFO]: Loyto[/127.0.0.1:1222] logged in with entity id 6905 at (1007.1176924946253, 108.99727989251734, 485.1738914663558)
+[10:58:55] [Server thread/INFO]: Loyto joined the game
+[10:59:16] [Server thread/INFO]: Loyto lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[10:59:16] [Server thread/INFO]: Loyto left the game
+[11:09:39] [Server thread/INFO]: Loyto[/127.0.0.1:1789] logged in with entity id 7294 at (1007.1176924946253, 108.99727989251734, 485.1738914663558)
+[11:09:39] [Server thread/INFO]: Loyto joined the game
+[11:10:00] [Server thread/INFO]: Loyto lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[11:10:00] [Server thread/INFO]: Loyto left the game
+[11:11:35] [Server thread/INFO]: Loyto[/127.0.0.1:1897] logged in with entity id 7725 at (1007.1176924946253, 108.99727989251734, 485.1738914663558)
+[11:11:35] [Server thread/INFO]: Loyto joined the game
+[11:19:34] [Server thread/INFO]: Loyto lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[11:19:34] [Server thread/INFO]: Loyto left the game
+[11:21:57] [Server thread/INFO]: Loyto[/127.0.0.1:2196] logged in with entity id 37065 at (918.2498156830072, 106.91395492322636, 570.1307010370904)
+[11:21:57] [Server thread/INFO]: Loyto joined the game
+[11:23:00] [Server thread/INFO]: Loyto lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[11:23:00] [Server thread/INFO]: Loyto left the game
+[11:37:47] [Server thread/INFO]: Loyto[/127.0.0.1:2451] logged in with entity id 39360 at (901.1823212715926, 106.91395492322636, 577.1195442788469)
+[11:37:47] [Server thread/INFO]: Loyto joined the game
+[11:37:59] [Server thread/INFO]: LoytoBis[/127.0.0.1:2503] logged in with entity id 39786 at (1.5, 61.0, 233.5)
+[11:37:59] [Server thread/INFO]: LoytoBis joined the game
+[11:39:53] [Server thread/INFO]: LoytoBis lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[11:39:53] [Server thread/INFO]: LoytoBis left the game
+[11:40:02] [Server thread/INFO]: LoytoBis[/127.0.0.1:2822] logged in with entity id 45786 at (1.17180114493849, 62.0, 234.3365308755686)
+[11:40:02] [Server thread/INFO]: LoytoBis joined the game
+[11:40:15] [Server thread/INFO]: Stopping server
+[11:40:15] [Server thread/INFO]: Saving players
+[11:40:15] [Server thread/INFO]: Saving worlds
+[11:40:15] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
+[11:40:15] [Server thread/INFO]: Saving chunks for level 'world'/Nether
+[11:40:15] [Server thread/INFO]: Saving chunks for level 'world'/The End
+k ticking took 178 ms
+[11:17:19] [Client thread/INFO]: Warning: Clientside chunk ticking took 101 ms
+[11:19:33] [Client thread/INFO]: Stopping!
+[11:19:37] [main/INFO]: Setting user: Loyto
+[11:19:38] [Client thread/INFO]: LWJGL Version: 2.9.1
+[11:19:42] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:UnderUtilities
+[11:19:43] [Sound Library Loader/INFO]: Sound engine started
+[11:19:43] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[11:19:43] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[11:19:44] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:UnderUtilities
+[11:19:44] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[11:19:44] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[11:19:45] [Sound Library Loader/INFO]: Sound engine started
+[11:21:57] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[11:22:59] [Client thread/INFO]: Stopping!
+[11:37:16] [main/INFO]: Setting user: Loyto
+[11:37:17] [Client thread/INFO]: LWJGL Version: 2.9.1
+[11:37:21] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:UnderUtilities
+[11:37:22] [Sound Library Loader/INFO]: Sound engine started
+[11:37:22] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[11:37:22] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[11:37:22] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:UnderUtilities
+[11:37:22] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[11:37:22] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[11:37:23] [Sound Library Loader/INFO]: Sound engine started
+[11:37:47] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[11:37:59] [Client thread/INFO]: [CHAT] LoytoBis joined the game
+[11:39:53] [Client thread/INFO]: [CHAT] LoytoBis left the game
+[11:40:02] [Client thread/INFO]: [CHAT] LoytoBis joined the game
+[11:40:32] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[11:40:38] [Client thread/INFO]: [CHAT] LoytoBis joined the game
+[11:40:48] [Client thread/INFO]: [CHAT] LoytoBis left the game
+[11:40:56] [Client thread/INFO]: [CHAT] LoytoBis joined the game
+[11:45:33] [Client thread/INFO]: Warning: Clientside chunk ticking took 101 ms
+[11:45:59] [Client thread/INFO]: Stopping!
+ack:UnderUtilities
+[11:37:35] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[11:37:35] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[11:37:36] [Sound Library Loader/INFO]: Sound engine started
+[11:37:59] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[11:40:02] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[11:40:35] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[11:40:56] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[11:46:00] [Client thread/INFO]: [CHAT] Loyto left the game
+[11:46:01] [Client thread/INFO]: Stopping!
+eypair
+[11:40:26] [Server thread/INFO]: Starting Minecraft server on *:25565
+[11:40:27] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[11:40:27] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[11:40:27] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[11:40:27] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[11:40:27] [Server thread/INFO]: Preparing level "world"
+[11:40:27] [Server thread/INFO]: Preparing start region for level 0
+[11:40:28] [Server thread/INFO]: Done (0,721s)! For help, type "help" or "?"
+[11:40:32] [Server thread/INFO]: Loyto[/127.0.0.1:2872] logged in with entity id 445 at (912.4702856753198, 110.654564210702, 610.6999999880791)
+[11:40:32] [Server thread/INFO]: Loyto joined the game
+[11:40:35] [Server thread/INFO]: LoytoBis[/127.0.0.1:2922] logged in with entity id 834 at (1.17180114493849, 62.0, 234.3365308755686)
+[11:40:35] [Server thread/INFO]: LoytoBis joined the game
+[11:40:48] [Server thread/INFO]: LoytoBis lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[11:40:48] [Server thread/INFO]: LoytoBis left the game
+[11:40:56] [Server thread/INFO]: LoytoBis[/127.0.0.1:2927] logged in with entity id 2302 at (1.17180114493849, 62.0, 234.3365308755686)
+[11:40:56] [Server thread/INFO]: LoytoBis joined the game
+[11:46:00] [Server thread/INFO]: Loyto lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[11:46:00] [Server thread/INFO]: Loyto left the game
+[11:46:02] [Server thread/INFO]: LoytoBis lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[11:46:02] [Server thread/INFO]: LoytoBis left the game
+[12:43:25] [Server thread/INFO]: LoytoBis[/127.0.0.1:1350] logged in with entity id 15655 at (1.17180114493849, 62.0, 234.3365308755686)
+[12:43:25] [Server thread/INFO]: LoytoBis joined the game
+[12:43:27] [Server thread/INFO]: Loyto[/127.0.0.1:1401] logged in with entity id 15799 at (912.4702856753198, 110.654564210702, 610.6999999880791)
+[12:43:27] [Server thread/INFO]: Loyto joined the game
+[12:43:41] [Server thread/INFO]: LoytoBis lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[12:43:41] [Server thread/INFO]: LoytoBis left the game
+[12:43:44] [Server thread/INFO]: LoytoBis[/127.0.0.1:1498] logged in with entity id 16788 at (1.17180114493849, 62.0, 234.3365308755686)
+[12:43:44] [Server thread/INFO]: LoytoBis joined the game
+[12:43:51] [Server thread/INFO]: LoytoBis lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[12:43:51] [Server thread/INFO]: LoytoBis left the game
+[12:44:35] [Server thread/INFO]: LoytoBis[/127.0.0.1:1508] logged in with entity id 18474 at (1.17180114493849, 62.0, 234.3365308755686)
+[12:44:35] [Server thread/INFO]: LoytoBis joined the game
+[12:44:41] [Server thread/INFO]: LoytoBis lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[12:44:41] [Server thread/INFO]: LoytoBis left the game
+[12:49:43] [Server thread/INFO]: LoytoBis[/127.0.0.1:1617] logged in with entity id 26143 at (1.17180114493849, 62.0, 234.3365308755686)
+[12:49:43] [Server thread/INFO]: LoytoBis joined the game
+[12:49:48] [Server thread/INFO]: LoytoBis lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[12:49:48] [Server thread/INFO]: LoytoBis left the game
+[12:49:59] [Server thread/INFO]: LoytoBis[/127.0.0.1:1765] logged in with entity id 28004 at (1.17180114493849, 62.0, 234.3365308755686)
+[12:49:59] [Server thread/INFO]: LoytoBis joined the game
+[12:50:16][12:51:33] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[12:52:07] [Client thread/ERROR]: Can't ping 127.0.0.1: Internal Exception: io.netty.handler.codec.DecoderException: com.google.gson.JsonSyntaxException: Expected status to be a JsonObject, was "Ser...g."
+[12:52:08] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[12:52:14] [Client thread/INFO]: [CHAT] Loyto joined the game
+[12:52:51] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[12:57:28] [Client thread/INFO]: [CHAT] LoytoBis fell from a high place
+[13:08:25] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[13:15:06] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[13:15:22] [Client thread/INFO]: [CHAT] Loyto joined the game
+[13:15:30] [Client thread/INFO]: [CHAT] Loyto left the game
+[13:15:40] [Client thread/INFO]: [CHAT] Loyto joined the game
+[13:18:09] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[13:18:18] [Client thread/INFO]: [CHAT] Loyto joined the game
+[13:18:25] [Client thread/INFO]: [CHAT] Loyto left the game
+[13:18:34] [Client thread/INFO]: [CHAT] Loyto joined the game
+[13:18:44] [Client thread/INFO]: [CHAT] Loyto left the game
+[13:18:48] [Client thread/INFO]: [CHAT] Loyto joined the game
+[CHAT] LoytoBis left the game
+[12:52:05] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[12:52:14] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[12:52:34] [Client thread/INFO]: [CHAT] LoytoBis left the game
+[12:52:51] [Client thread/INFO]: [CHAT] LoytoBis joined the game
+[12:54:18] [Client thread/INFO]: [CHAT] Loyto, LoytoBis
+[12:54:18] [Client thread/INFO]: [CHAT] Loyto, LoytoBis
+[12:54:18] [Client thread/INFO]: [CHAT] Loyto, LoytoBis
+[12:54:19] [Client thread/INFO]: [CHAT] Loyto, LoytoBis
+[12:54:21] [Client thread/INFO]: [CHAT] Teleported Loyto to LoytoBis
+[12:55:29] [Client thread/INFO]: [CHAT] There is no such item with ID commandblock
+[12:55:33] [Client thread/INFO]: [CHAT] There is no such item with ID comandblock
+[12:55:39] [Client thread/INFO]: [CHAT] There is no such item with ID comandblok
+[12:55:43] [Client thread/INFO]: [CHAT] There is no such item with ID commandblok
+[12:55:51] [Client thread/INFO]: [CHAT] There is no such item with ID command
+[12:55:56] [Client thread/INFO]: [CHAT] There is no such item with ID commandblock
+[12:56:01] [Client thread/INFO]: [CHAT] Given [Command Block] * 1 to Loyto
+[12:56:34] [Client thread/INFO]: [CHAT] Command set: weather clear
+[12:57:01] [Client thread/INFO]: [CHAT] [@: Changing to clear weather]
+[12:57:13] [Client thread/INFO]: [CHAT] Loyto, LoytoBis
+[12:57:14] [Client thread/INFO]: [CHAT] Loyto, LoytoBis
+[12:57:16] [Client thread/INFO]: [CHAT] Teleported LoytoBis to Loyto
+[12:57:28] [Client thread/INFO]: [CHAT] Teleported LoytoBis to Loyto
+[12:57:28] [Client thread/INFO]: [CHAT] LoytoBis fell from a high place
+[12:57:30] [Client thread/INFO]: [CHAT] Teleported LoytoBis to Loyto
+[12:57:39] [Client thread/INFO]: [CHAT] Teleported LoytoBis to Loyto
+[13:08:21] [Client thread/INFO]: [CHAT] LoytoBis left the game
+[13:08:25] [Client thread/INFO]: [CHAT] LoytoBis joined the game
+[13:15:22] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[13:15:40] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[13:18:17] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[13:18:34] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+[13:18:48] [Client thread/INFO]: Connecting to 127.0.0.1, 25565
+:08] [Server thread/INFO]: LoytoBis joined the game
+[12:52:14] [Server thread/INFO]: Loyto[/127.0.0.1:1881] logged in with entity id 1052 at (911.7524823344773, 110.654564210702, 613.8212358856688)
+[12:52:14] [Server thread/INFO]: Loyto joined the game
+[12:52:33] [Server thread/INFO]: LoytoBis lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[12:52:33] [Server thread/INFO]: LoytoBis left the game
+[12:52:51] [Server thread/INFO]: LoytoBis[/127.0.0.1:1906] logged in with entity id 1699 at (1.17180114493849, 62.0, 234.3365308755686)
+[12:52:51] [Server thread/INFO]: LoytoBis joined the game
+[12:54:21] [Server thread/INFO]: [Loyto: Teleported Loyto to LoytoBis]
+[12:56:01] [Server thread/INFO]: [Loyto: Given [Command Block] * 1 to Loyto]
+[12:57:01] [Server thread/INFO]: [@: Changing to clear weather]
+[12:57:16] [Server thread/INFO]: [Loyto: Teleported LoytoBis to Loyto]
+[12:57:28] [Server thread/INFO]: [Loyto: Teleported LoytoBis to Loyto]
+[12:57:28] [Server thread/INFO]: LoytoBis fell from a high place
+[12:57:30] [Server thread/INFO]: [Loyto: Teleported LoytoBis to Loyto]
+[12:57:39] [Server thread/INFO]: [Loyto: Teleported LoytoBis to Loyto]
+[13:08:21] [Server thread/INFO]: LoytoBis lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[13:08:21] [Server thread/INFO]: LoytoBis left the game
+[13:08:25] [Server thread/INFO]: LoytoBis[/127.0.0.1:2142] logged in with entity id 35273 at (-63.28252890211295, 121.0, 185.43004981600987)
+[13:08:25] [Server thread/INFO]: LoytoBis joined the game
+[13:13:52] [Server thread/INFO]: Stopping server
+[13:13:52] [Server thread/INFO]: Saving players
+[13:13:52] [Server thread/INFO]: Saving worlds
+[13:13:52] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
+[13:13:52] [Server thread/INFO]: Saving chunks for level 'world'/Nether
+[13:13:52] [Server thread/INFO]: Saving chunks for level 'world'/The End
+PORT!
+[13:13:47] [Server thread/WARN]: The exception was: java.net.BindException: Address already in use: bind
+[13:13:47] [Server thread/WARN]: Perhaps a server is already running on that port?
+[13:14:19] [Server thread/INFO]: Starting minecraft server version 1.7.10
+[13:14:24] [Server thread/INFO]: Loading properties
+[13:14:24] [Server thread/INFO]: Default game type: SURVIVAL
+[13:14:24] [Server thread/INFO]: Generating keypair
+[13:14:24] [Server thread/INFO]: Starting Minecraft server on *:25565
+[13:14:24] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[13:14:24] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[13:14:24] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[13:14:24] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[13:14:24] [Server thread/INFO]: Preparing level "world"
+[13:14:25] [Server thread/INFO]: Preparing start region for level 0
+[13:14:25] [Server thread/INFO]: Done (0,765s)! For help, type "help" or "?"
+[13:15:06] [Server thread/INFO]: LoytoBis[/127.0.0.1:2275] logged in with entity id 467 at (-63.28252890211295, 121.0, 185.43004981600987)
+[13:15:06] [Server thread/INFO]: LoytoBis joined the game
+[13:15:22] [Server thread/INFO]: Loyto[/127.0.0.1:2324] logged in with entity id 1177 at (-70.24912662897214, 122.90468686255764, 187.6668628770473)
+[13:15:22] [Server thread/INFO]: Loyto joined the game
+[13:15:30] [Server thread/INFO]: Loyto lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[13:15:30] [Server thread/INFO]: Loyto left the game
+[13:15:40] [Server thread/INFO]: Loyto[/127.0.0.1:2327] logged in with entity id 1882 at (-70.24912662897214, 122.90468686255764, 187.6668628770473)
+[13:15:40] [Server thread/INFO]: Loyto joined the game
+[13:15:58] [Server thread/INFO]: Stopping server
+[13:15:58] [Server thread/INFO]: Saving players
+[13:15:58] [Server thread/INFO]: Saving worlds
+[13:15:58] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
+[13:15:58] [Server thread/INFO]: Saving chunks for level 'world'/Nether
+[13:15:58] [Server thread/INFO]: Saving chunks for level 'world'/The End
+[13:16:22] [Server thread/INFO]: Starting minecraft server version 1.7.10
+[13:16:26] [Server thread/INFO]: Loading properties
+[13:16:26] [Server thread/INFO]: Default game type: SURVIVAL
+[13:16:26] [Server thread/INFO]: Generating keypair
+[13:16:26] [Server thread/INFO]: Starting Minecraft server on *:25565
+[13:16:27] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[13:16:27] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[13:16:27] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[13:16:27] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[13:16:27] [Server thread/INFO]: Preparing level "world"
+[13:16:27] [Server thread/INFO]: Preparing start region for level 0
+[13:16:28] [Server thread/INFO]: Done (0,849s)! For help, type "help" or "?"
+[13:18:10] [Server thread/INFO]: LoytoBis[/127.0.0.1:2379] logged in with entity id 450 at (-63.28252890211295, 121.0, 185.43004981600987)
+[13:18:10] [Server thread/INFO]: LoytoBis joined the game
+[13:18:18] [Server thread/INFO]: Loyto[/127.0.0.1:2428] logged in with entity id 1221 at (-70.24912662897214, 122.90468686255764, 187.6668628770473)
+[13:18:18] [Server thread/INFO]: Loyto joined the game
+[13:18:25] [Server thread/INFO]: Loyto lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[13:18:25] [Server thread/INFO]: Loyto left the game
+[13:18:34] [Server thread/INFO]: Loyto[/127.0.0.1:2430] logged in with entity id 1847 at (-70.24912662897214, 122.90468686255764, 187.6668628770473)
+[13:18:34] [Server thread/INFO]: Loyto joined the game
+[13:18:44] [Server thread/INFO]: Loyto lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[13:18:44] [Server thread/INFO]: Loyto left the game
+[13:18:48] [Server thread/INFO]: Loyto[/127.0.0.1:2479] logged in with entity id 2141 at (-70.24912662897214, 122.90468686255764, 187.6668628770473)
+[13:18:48] [Server thread/INFO]: Loyto joined the game
+[13:28:28] [Server thread/INFO]: Stopping server
+[13:28:28] [Server thread/INFO]: Saving players
+[13:28:28] [Server thread/INFO]: Saving worlds
+[13:28:28] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
+[13:28:28] [Server thread/INFO]: Saving chunks for level 'world'/Nether
+[13:28:28] [Server thread/INFO]: Saving chunks for level 'world'/The End
+FO]: Created: 16x16 textures/blocks-atlas
+[13:24:25] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[13:24:25] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:UnderUtilities
+[13:24:26] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[13:24:26] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[13:24:27] [Sound Library Loader/INFO]: Sound engine started
+[13:33:14] [Client thread/INFO]: Stopping!
