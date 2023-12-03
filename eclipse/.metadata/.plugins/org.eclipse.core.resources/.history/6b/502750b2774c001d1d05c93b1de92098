@@ -1,7 +1,0 @@
-package fr.skhr.loyto.SKHRTab.common;
-
-import cpw.mods.fml.common.network.simpleimpl.IMessage;
-
-public class confMessage implements IMessage {
-
-}
